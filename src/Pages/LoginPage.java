@@ -15,8 +15,8 @@ public class LoginPage extends BasePage {
 
     final private GridLayout gridLayout = new GridLayout(3, 2);
 
-    private JButton loginButton = new JButton("Login");
-    private JButton registerButton = new JButton("Register");
+    private JButton loginButton = new JButton("Sign In");
+    private JButton registerButton = new JButton("Sign Up");
 
     public LoginPage(){
         super("Login Page");
@@ -46,6 +46,8 @@ public class LoginPage extends BasePage {
             public void actionPerformed(ActionEvent e) {
                 timesClicked++;
                 System.out.println("RegisterButton clicked " + timesClicked + " times.");
+                dispose();
+                new RegisterPage();
             }
         };
     }
@@ -59,6 +61,4 @@ public class LoginPage extends BasePage {
             System.out.println("Password = " + password);
         };
     }
-
-
 }

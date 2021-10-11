@@ -3,7 +3,7 @@ package Pages;
 import javax.swing.*;
 import java.awt.*;
 
-public class BasePage extends JFrame{
+public abstract class BasePage extends JFrame{
 
     final static int HEIGHT = 600;
     final static int WIDTH = 800;
